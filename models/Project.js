@@ -11,21 +11,28 @@ Project.init(
       primaryKey: true,
       autoIncrement: true,
     },
-    name: {
+    dish: {
       type: DataTypes.STRING,
       allowNull: false,
     },
-    description: {
-      type: DataTypes.STRING,
+    ingredients: {
+      type: DataTypes.TEXT,
+    },
+    instructions: {
+      type: DataTypes.TEXT,
+      allowNull: false,
     },
     date_created: {
       type: DataTypes.DATE,
       allowNull: false,
       defaultValue: DataTypes.NOW,
     },
-    needed_funding: {
+    cooking_time: {
       type: DataTypes.FLOAT,
       allowNull: false,
+    },
+    rating: {
+      type: DataTypes.DECIMAL(3, 2),
     },
     user_id: {
       type: DataTypes.INTEGER,

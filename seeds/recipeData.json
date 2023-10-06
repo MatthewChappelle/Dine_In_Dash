@@ -1,0 +1,81 @@
+[
+    {
+      "user_id": 1,
+      "title": "Spaghetti Carbonara",
+      "ingredients": "200g spaghetti, 2 eggs, 100g grated Pecorino Romano cheese, 100g guanciale, salt, pepper",
+      "instructions": "1. Boil spaghetti until al dente. 2. In a separate pan, cook guanciale until crispy. 3. In a bowl, whisk eggs and mix with grated Pecorino Romano cheese. 4. Drain spaghetti and toss with egg and cheese mixture. 5. Add crispy guanciale and season with salt and pepper. Serve hot.",
+      "category": "Italian",
+      "rating": 4.5
+    },
+    {
+      "user_id": 2,
+      "title": "Chicken Tikka Masala",
+      "ingredients": "500g chicken thighs, 1 cup plain yogurt, 2 tbsp tikka masala spice mix, 1 onion, 2 cloves garlic, 1-inch ginger, 1 can tomato sauce, 1/2 cup heavy cream, salt, oil",
+      "instructions": "1. Marinate chicken in yogurt and tikka masala spice mix. 2. Grill or cook chicken until done. 3. In a separate pan, sauté chopped onion, garlic, and ginger. 4. Add tomato sauce and heavy cream. 5. Simmer until sauce thickens. 6. Add grilled chicken and simmer. Serve with rice or naan.",
+      "category": "Indian",
+      "rating": 4.8
+    },
+    {
+      "user_id": 3,
+      "title": "Greek Salad",
+      "ingredients": "1 cucumber, 3 tomatoes, 1 red onion, 200g feta cheese, Kalamata olives, olive oil, red wine vinegar, oregano, salt, pepper",
+      "instructions": "1. Chop cucumber, tomatoes, and red onion. 2. Combine in a bowl with Kalamata olives and crumbled feta cheese. 3. Drizzle with olive oil and red wine vinegar. 4. Season with oregano, salt, and pepper. 5. Toss to combine and serve chilled.",
+      "category": "Greek",
+      "rating": 4.2
+    },
+    {
+      "user_id": 1,
+      "title": "Sushi Rolls",
+      "ingredients": "Sushi rice, nori sheets, assorted fillings (e.g., fish, avocado, cucumber), soy sauce, wasabi, pickled ginger",
+      "instructions": "1. Prepare sushi rice and let it cool. 2. Place a nori sheet on a bamboo sushi mat. 3. Add rice, fillings, and roll tightly. 4. Slice into bite-sized pieces. 5. Serve with soy sauce, wasabi, and pickled ginger.",
+      "category": "Japanese",
+      "rating": 4.6
+    },
+    {
+      "user_id": 2,
+      "title": "Classic Margherita Pizza",
+      "ingredients": "Pizza dough, tomato sauce, fresh mozzarella cheese, fresh basil leaves, olive oil, salt, pepper",
+      "instructions": "1. Roll out pizza dough. 2. Spread tomato sauce evenly. 3. Add fresh mozzarella and basil leaves. 4. Drizzle with olive oil, season with salt and pepper. 5. Bake until crust is golden. Enjoy!",
+      "category": "Italian",
+      "rating": 4.7
+    },
+    {
+      "user_id": 3,
+      "title": "Chocolate Chip Cookies",
+      "ingredients": "2 1/4 cups all-purpose flour, 1/2 tsp baking soda, 1 cup unsalted butter, 1/2 cup granulated sugar, 1 cup brown sugar, 1 tsp salt, 2 tsp vanilla extract, 2 large eggs, 2 cups semisweet chocolate chips",
+      "instructions": "1. Preheat oven to 350°F. 2. In a bowl, mix flour and baking soda. 3. In another bowl, cream butter, sugars, salt, and vanilla. 4. Add eggs one at a time. 5. Gradually mix in dry ingredients. 6. Stir in chocolate chips. 7. Drop dough onto a baking sheet. 8. Bake for 10-12 minutes. Cool on a wire rack.",
+      "category": "Dessert",
+      "rating": 4.9
+    },
+    {
+      "user_id": 1,
+      "title": "Mango Salsa",
+      "ingredients": "2 ripe mangoes, 1 red onion, 1 red bell pepper, cilantro, lime juice, salt, pepper, jalapeño (optional)",
+      "instructions": "1. Dice mangoes, red onion, and red bell pepper. 2. Chop cilantro and jalapeño (remove seeds for less heat). 3. Mix all ingredients. 4. Add lime juice, salt, and pepper to taste. 5. Serve with tortilla chips or as a topping.",
+      "category": "Appetizer",
+      "rating": 4.4
+    },
+    {
+      "user_id": 2,
+      "title": "Homemade Guacamole",
+      "ingredients": "3 ripe avocados, 1 small onion, 2 cloves garlic, 1-2 tomatoes, lime juice, salt, pepper, cilantro",
+      "instructions": "1. Mash avocados in a bowl. 2. Finely chop onion, garlic, and tomatoes. 3. Mix into mashed avocado. 4. Add lime juice, salt, pepper, and chopped cilantro to taste. 5. Serve with tortilla chips or as a dip.",
+      "category": "Mexican",
+      "rating": 4.7
+    },
+    {
+      "user_id": 3,
+      "title": "Vegetable Stir-Fry",
+      "ingredients": "Assorted vegetables (e.g., bell peppers, broccoli, carrots), tofu or chicken, soy sauce, ginger, garlic, sesame oil, rice or noodles",
+      "instructions": "1. Slice vegetables and tofu or chicken. 2. Heat oil in a pan. 3. Stir-fry ginger and garlic. 4. Add vegetables and protein. 5. Drizzle with soy sauce and sesame oil. 6. Serve over rice or noodles.",
+      "category": "Asian",
+      "rating": 4.3
+    },
+    {
+      "user_id": 1,
+      "title": "Caesar Salad",
+      "ingredients": "Romaine lettuce, croutons, Parmesan cheese, Caesar dressing, lemon juice, anchovies (optional)",
+      "instructions": "1. Tear lettuce into bite-sized pieces. 2. Toss with croutons and grated Parmesan cheese. 3. Drizzle with Caesar dressing and lemon juice. 4. Add anchovies for extra flavor if desired.",
+      "category": "Salad",
+      "rating": 4.
+  
