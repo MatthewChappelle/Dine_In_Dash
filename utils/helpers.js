@@ -12,11 +12,28 @@ module.exports = {
 
     // Return a random emoji
     if (randomNum > 0.7) {
-      return `<span for="img" aria-label="lightbulb">💡</span>`;
+      return `<span for="img" aria-label="pan">🥘</span>`;
     } else if (randomNum > 0.4) {
-      return `<span for="img" aria-label="laptop">💻</span>`;
+      return `<span for="img" aria-label="pot">🍲</span>`;
     } else {
-      return `<span for="img" aria-label="gear">⚙️</span>`;
+      return `<span for="img" aria-label="plate">🍽️</span>`;
+    }
+  },
+
+  // New function to display emoji based on rating
+  get_rating_emoji: (rating) => {
+    if (rating >= 4.5) {
+      return `<span for="img" aria-label="excellent">🌟🌟🌟🌟🌟</span>`;
+    } else if (rating >= 4) {
+      return `<span for="img" aria-label="very good">🌟🌟🌟🌟</span>`;
+    } else if (rating >= 3) {
+      return `<span for="img" aria-label="good">🌟🌟🌟</span>`;
+    } else if (rating >= 2) {
+      return `<span for="img" aria-label="fair">🌟🌟</span>`;
+    } else if (rating >= 1) {
+      return `<span for="img" aria-label="poor">🌟</span>`;
+    } else {
+      return `<span for="img" aria-label="no rating">—</span>`;
     }
   },
 };
