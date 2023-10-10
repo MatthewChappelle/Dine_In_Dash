@@ -34,6 +34,9 @@ Project.init(
     rating: {
       type: DataTypes.DECIMAL(3, 2),
     },
+    picture_link: {
+      type: DataTypes.STRING,
+    },
     user_id: {
       type: DataTypes.INTEGER,
       references: {

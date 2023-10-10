@@ -1,8 +1,12 @@
 <div class="text-center">
   <h2>{{name}}</h2>
   <p>{{{get_emoji}}}</p>
+  <p>{{dish}}</p>
   <p>Ingredients: {{ingredients}}</p>
   <p>Instructions: {{instructions}}</p>
+  <p>
+    <img src="{{picture_link}}" alt="Recipe Image" style="width:300px; height 300px;">
+  </p>
   <p>Created by {{user.name}} on {{format_date date_created}}</p>
   <p>
     <span for="img" aria-label="money">⏳</span>
