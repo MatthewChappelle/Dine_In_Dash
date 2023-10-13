@@ -1,4 +1,5 @@
-header, .project:not(:last-child) {
+header,
+.project:not(:last-child) {
   border-bottom: 1px solid #ccc;
 }
 
@@ -21,4 +22,73 @@ header, .project:not(:last-child) {
   color: #056605;
   font-weight: bold;
   margin-left: -5px;
+}
+
+/* CSS styles for wider screens */
+.some-element {
+  width: 100%;
+
+}
+
+/* Media query for screens with a minimum width of 768px */
+@media (min-width: 768px) {
+  .some-element {
+    width: 50%;
+  }
+}
+
+/* Media query for screens with a minimum width of 1024px */
+@media (min-width: 1024px) {
+  .some-element {
+    width: 30%;
+
+  }
+}
+
+.wrapper {
+  display: grid;
+  height: 100vh;
+  place-items: center
+}
+
+.centered-content {
+  margin: 0 auto;
+  width: 50%;
+}
+
+/* Apply styles to the form headings */
+h2 {
+  color: #3498db;
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+/* Apply styles to form labels */
+label {
+  color: #555;
+  font-weight: bold;
+}
+
+/* Apply styles to form inputs */
+.form-input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Apply styles to form buttons */
+.btn {
+  background-color: #3498db;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Apply styles to form buttons on hover */
+.btn:hover {
+  background-color: #207db7;
 }

@@ -1,32 +1,46 @@
 <!-- Loop over each object in the projects array -->
 {{#each projects as |project| }}
-<div class="row mb-4 project">
-  <div class="col-md-5">
-    <h2>
-      <!-- Call helper function with triple brackets to render the emoji span as HTML -->
-      {{{get_emoji}}}
-      <a href="/project/{{project.id}}">{{project.dish}}</a>
-    </h2>
-    <img src="{{project.picture_link}}" alt="{{project.dish}} Image" style="width: 300px; height: 300px;">
-    <p>
-      <span for="img" aria-label="money">⏳</span>
-      <!-- Pass needed_funding value to the helper function -->
-      <span class="dollar-amount">{{format_amount project.cooking_time}}</span>
-      minute cook time!
-    </p>
-    <p>{{{get_rating_emoji project.rating}}} {{rating}} rating</p>
-    <p>Created by {{project.user.name}} on {{format_date project.date_created}}</p>
-  </div>
-  <div class="col-md-7">
-    
-    <p>
-      <b>Ingredients: </b>
-      {{project.ingredients}}
-    </p>
-    <p>
-      <b>Instructions: </b>
-        {{project.instructions}}
-    </p>
+<div class="wrapper bg-gray-400 antialiased text-gray-900">
+  <div><img src="{{project.picture_link}}" alt="{{project.dish}} Image"
+      class="w-full h-64 object-cover object-center rounded-lg shadow-md">
+    <div class="relative px-4 -mt-16  ">
+      <div class="bg-white p-6 rounded-lg shadow-lg">
+        <div class="flex items-baseline">
+          <span
+            class="bg-yellow-400 text-teal-800 text-xs px-2 inline-block rounded-full  uppercase font-semibold tracking-wide">
+            <span for="img" aria-label="money">⏳</span>
+            <!-- Pass needed_funding value to the helper function -->
+            <span class="dollar-amount">{{format_amount project.cooking_time}}</span>
+          </span>
+          <div class="ml-2 text-gray-600 uppercase text-xs font-semibold tracking-wider"> minute cook time!
+          </div>
+        </div>
+
+        <h4 class="mt-1 text-xl font-semibold uppercase leading-tight truncate">
+          {{{get_emoji}}}
+          <a href="/project/{{project.id}}">{{project.dish}}</a>
+        </h4>
+
+        <div class="mt-1">
+          <p>Created by {{project.user.name}} on {{format_date project.date_created}}</p>
+        </div>
+        <div class="col-md-7">
+          <p>
+            <b>Ingredients: </b>
+            {{project.ingredients}}
+          </p>
+          <p>
+            <b>Instructions: </b>
+            {{project.instructions}}
+          </p>
+        </div>
+        <div class="mt-4">
+          <span class="text-teal-600 text-md font-semibold">{{{get_rating_emoji project.rating}}} {{rating}} rating
+          </span>
+          {{!-- <span class="text-sm text-gray-600">(based on 234 ratings)</span> --}}
+        </div>
+      </div>
+    </div>
+    {{/each}}
   </div>
 </div>
-{{/each}}

@@ -1,56 +1,59 @@
-<div class="row">
-  <div class="col-auto">
-    <h2>Welcome, {{name}}!</h2>
-  </div>
-</div>
-
-<div class="row mt-4">
-  <div class="col-md-6">
-    <h3>Create a New Dish:</h3>
-
-    <form class="form new-project-form">
-      <div class="form-group">
-        <label for="project-name">Dish Name:</label>
-        <input class="form-input" type="text" id="project-name" name="project-name" />
-      </div>
-      <div class="form-group">
-        <label for="project-funding">Cooking Time (minutes):</label>
-        <input class="form-input" type="number" id="project-funding" name="project-funding" />
-      </div>
-      <div class="form-group">
-        <label for="project-desc">Ingredients:</label>
-        <textarea class="form-input" id="project-desc" name="project-desc"></textarea>
-      </div>
-      <div class="form-group">
-        <label for="project-inst">Instructions:</label>
-        <textarea class="form-input" id="project-inst" name="project-inst"></textarea>
-      </div>
-      <div class="form-group">
-        <label for="project-inst">Picture Link:</label>
-        <textarea class="form-input" id="project-pict" name="project-pict"></textarea>
-      </div>
-      <div class="form-group">
-        <button type="submit" class="btn btn-primary">Create</button>
-      </div>
-    </form>
-  </div>
-
-  {{#if projects.length}}
-  <div class="col-md-6 project-list">
-    <h3>Current Recipes:</h3>
-
-    {{#each projects as |project|}}
-    <div class="row mb-2">
-      <div class="col-md-8">
-        <h4><a href="/project/{{project.id}}">{{project.dish}}</a></h4>
-      </div>
-      <div class="col-md-4">
-        <button class="btn btn-sm btn-danger" data-id="{{project.id}}">DELETE</button>
-      </div>
+<div class="cancel-h-screen">
+  <div class="row">
+    <div class="col-auto">
+      <h2 class="text-2xl">Welcome, {{name}}!</h2>
     </div>
-    {{/each}}
   </div>
-  {{/if}}
+  <div class="row mt-4">
+    <div class="col-md-6">
+      <h3 class="text-lg">Add a New Recipe</h3>
+      <br>
+      <form class="form new-project-form">
+        <div class="form-group">
+          <label for="project-name">Dish Name:</label>
+          <input class="form-input" type="text" id="project-name" name="project-name" />
+        </div>
+        <div class="form-group">
+          <label for="project-funding">Cooking Time (minutes):</label>
+          <input class="form-input" type="number" id="project-funding" name="project-funding" />
+        </div>
+        <div class="form-group">
+          <label for="project-desc">Ingredients:</label>
+          <textarea class="form-input" id="project-desc" name="project-desc"></textarea>
+        </div>
+        <div class="form-group">
+          <label for="project-inst">Instructions:</label>
+          <textarea class="form-input" id="project-inst" name="project-inst"></textarea>
+        </div>
+        <div class="form-group">
+          <label for="project-inst">Picture Link:</label>
+          <textarea class="form-input" id="project-pict" name="project-pict"></textarea>
+        </div>
+        <div class="form-group">
+          <button type="submit" class="btn btn-primary">Create</button>
+        </div>
+      </form>
+    </div>
+    <br><br>
+    <div style="border-bottom: 1px solid #ccc"></div>
+    <br>
+    {{#if projects.length}}
+    <div class="col-md-6 project-list">
+      <h3 class="text-lg">Current Recipes</h3>
+      <br>
+      {{#each projects as |project|}}
+      <div class="row mb-2">
+        <div class="col-md-8">
+          <h4><a href="/project/{{project.id}}">{{project.dish}}</a></h4>
+        </div>
+        <div class="col-md-4">
+          <button class="btn btn-sm btn-danger" data-id="{{project.id}}">DELETE</button>
+        </div>
+      </div>
+      {{/each}}
+    </div>
+    {{/if}}
+  </div>
 </div>
-
+</div>
 <script src="./js/profile.js"></script>

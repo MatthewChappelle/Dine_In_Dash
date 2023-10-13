@@ -4,32 +4,38 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cook My Recipe!</title>
+  <title>Dine-In Dash</title>
+  {{!--
   <link rel="stylesheet" href="/css/jass.css">
+  <link href="/dist/output.css" rel="stylesheet"> --}}
   <link rel="stylesheet" href="/css/style.css">
+  <!-- Tailwind CSS -->
+  <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
 </head>
 
 <body>
-  <div class="flex-column justify-space-around">
-    <header class="display-flex justify-space-between align-center p-2">
+  <div class="flex flex-col justify-between">
+    <header class="flex justify-between items-center p-2">
       <h1>
-        <span role="img" aria-label="chef">👨‍🍳</span>
-        <a href="/">Cook My Recipe!</a>
+        <span role="img" aria-label="chef" class="text-3xl font-semibold text-gray-800">👨‍🍳</span>
+        <a href="/" class="text-3xl font-semibold text-gray-800">Cook My Recipe!</a>
       </h1>
-      <nav>
+      <nav class="flex items-center">
         <!-- Conditionally render login or logout links -->
         {{#if logged_in}}
-        <a href="/profile">Profile</a> |
-        <button class="no-button" id="logout">Logout</button>
+        <a href="/profile">Profile</a> &nbsp;|&nbsp;
+        <button class="bg-sky-500 hover:bg-sky-700" id="logout">Logout &nbsp;</button>
         {{else}}
-        <a href="/login">Login</a>
+        <a href="/login">Login &nbsp;</a>
         {{/if}}
       </nav>
     </header>
-    <main class="container container-fluid mt-5">
-      <!-- Render the sub layout -->
-      {{{ body }}}
-    </main>
+    <div class="flex justify-center items-center">
+      <main class="container container-fluid mt-5">
+        <!-- Render the sub layout -->
+        {{{ body }}}
+      </main>
+    </div>
     <footer>
       <!-- Add your footer content here -->
     </footer>

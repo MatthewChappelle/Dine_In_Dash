@@ -12,14 +12,16 @@
     "ingredients": "2 (28-ounce) cans whole tomatoes, 1 cup fresh basil leaves, 1 cup heavy cream, 1/2 cup unsalted butter, 1 medium onion, 2 cloves garlic, salt, pepper",
     "instructions": "1. In a large pot, melt the butter over medium heat. 2. Add chopped onion and garlic; cook until onion is translucent. 3. Stir in the tomatoes, basil, salt, and pepper. 4. Reduce heat to low, cover, and simmer for 15 minutes. 5. Remove from heat and allow to cool slightly. 6. Puree the soup in batches in a blender or food processor. 7. Return to the pot, and stir in the heavy cream. 8. Heat over low heat, just until warmed. Do not boil. 9. Serve hot with a sprinkle of fresh basil leaves.",
     "cooking_time": 35,
-    "rating": 4.9
+    "rating": 4.9,
+    "picture_link": "https://garlicsaltandlime.com/wp-content/uploads/2022/09/Creamy-tomato-basil-soup-1.jpg"
   },
   {
     "dish": "Spicy Chicken Tacos",
     "ingredients": "1 pound boneless, skinless chicken breasts, 1 packet taco seasoning, 1 cup salsa, 1/2 cup shredded cheddar cheese, 8 small flour tortillas, lettuce, sour cream",
     "instructions": "1. Season chicken breasts with taco seasoning. 2. Place chicken in a slow cooker and pour salsa over it. 3. Cook on low for 6-8 hours or high for 3-4 hours until chicken is tender and can be shredded easily. 4. Shred the chicken using two forks. 5. Warm the tortillas in the oven or microwave. 6. Fill tortillas with chicken, top with cheese, lettuce, and sour cream. 7. Serve hot and enjoy!",
     "cooking_time": 240,
-    "rating": 4.5
+    "rating": 4.5,
+    "picture_link": "https://www.willcookforsmiles.com/wp-content/uploads/2016/08/Sriracha-Chicken-Tacos.jpg"
   },
   {
     "dish": "Pasta Alfredo",
