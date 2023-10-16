@@ -1,20 +1,38 @@
-<div class="text-center">
-  <p>{{{get_emoji}}}</p>
-  <p>{{dish}}</p>
-  <p>
-    <img src="{{picture_link}}" alt="Recipe Image" style="width:300px; height:auto;" class="mx-auto">
-  </p>
-  <p>Ingredients: {{ingredients}}</p>
-  <p>Instructions: {{instructions}}</p>
-  <p>Created by {{user.name}} on {{format_date date_created}}</p>
-  <p>
-    <span for="img" aria-label="money">⏳</span>
-    <span class="dollar-amount">{{format_amount cooking_time}}</span>
-    needed
-  </p>
-  <p>
-    <button class="btn btn-primary">Rate this recipe!</button>
-  </p>
-</div>
-</div>
-</div>
+<div class="font-sans antialiased text-gray-900 leading-normal tracking-wider bg-cover"
+  style="background-image:url('https://img.freepik.com/free-photo/vintage-old-rustic-cutlery-dark_1220-4883.jpg?w=2000&t=st=1697254665~exp=1697255265~hmac=6b121d3c06c2a46e6a280baec79d38af91925507e4c5f0cfcaebd5701075cff8');">
+
+  <div class="max-w-4xl flex items-center h-auto lg:h-screen flex-wrap mx-auto my-32 lg:my-0">
+    <!--Main Col-->
+    <div id="profile"
+      class="w-full lg:w-3/5 rounded-lg lg:rounded-l-lg lg:rounded-r-lg shadow-2xl bg-white opacity-75 mx-6 lg:mx-0">
+
+
+      <div class="p-4 md:p-12 text-center lg:text-left">
+        <!-- Image for mobile view-->
+        <div class="block lg:hidden rounded-full shadow-xl mx-auto -mt-16 h-48 w-48 bg-cover bg-center"
+          style="background-image: url('{{picture_link}}')"></div>
+
+        <h1 class="text-3xl font-bold pt-8 lg:pt-0 text-center">{{dish}}</h1>
+        <div class="mx-auto lg:mx-0 w-5/5 pt-3 border-b-2 border-green-500 opacity-25"></div>
+        <p class="pt-4 text-base font-bold flex items-center justify-center lg:justify-start"><span for="img"
+            aria-label="time">⏳</span>
+          <min class="sand-clock">&nbsp; {{format_amount cooking_time}} mins needed
+        </p>
+        <p class="pt-2 text-gray-600 text-xs lg:text-sm flex items-center justify-center lg:justify-start">Created by
+          {{user.name}} on {{format_date date_created}}</p>
+        <p class="pt-8 text-sm"><b>Ingredients:</b> {{ingredients}}</p>
+        <p class="pt-8 text-sm"><b>Instructions:</b> {{instructions}}</p>
+
+        <div class="pt-12 pb-8">
+          <button class="bg-green-700 hover:bg-green-900 text-white font-bold py-2 px-4 rounded-full">
+            Rate this recipe!
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!--Img Col-->
+    <div class="w-full lg:w-2/5">
+      <!-- Image on the side (desktop) -->
+      <img src="{{picture_link}}" class="rounded-none lg:rounded-lg shadow-2xl hidden lg:block">
+    </div>

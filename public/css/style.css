@@ -3,22 +3,7 @@ header,
   border-bottom: 1px solid #ccc;
 }
 
-.no-button {
-  background: none;
-  border: none;
-  padding: 0;
-  cursor: pointer;
-  color: #1b89bc;
-  text-decoration: none;
-  font-size: 100%;
-}
-
-.no-button:hover {
-  color: #065b83;
-  text-decoration: underline;
-}
-
-.dollar-amount {
+.sand-clock {
   color: #056605;
   font-weight: bold;
   margin-left: -5px;
@@ -47,7 +32,6 @@ header,
 
 .wrapper {
   display: grid;
-  height: 100vh;
   place-items: center
 }
 
@@ -58,7 +42,7 @@ header,
 
 /* Apply styles to the form headings */
 h2 {
-  color: #3498db;
+  color: #102e05;
   font-size: 24px;
   margin-bottom: 15px;
 }
@@ -80,7 +64,7 @@ label {
 
 /* Apply styles to form buttons */
 .btn {
-  background-color: #3498db;
+  background-color: #102e05;
   color: #fff;
   padding: 10px 20px;
   border: none;
@@ -90,5 +74,16 @@ label {
 
 /* Apply styles to form buttons on hover */
 .btn:hover {
-  background-color: #207db7;
+  background-color: #102e05;
+}
+
+/* Define light and dark mode classes */
+.light-mode {
+  background-color: white;
+  color: black;
+}
+
+.dark-mode {
+  background-color: #1a202c;
+  color: white;
 }
