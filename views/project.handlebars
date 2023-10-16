@@ -22,29 +22,29 @@
           {{user.name}} on {{format_date date_created}}</p>
         <p class="pt-8 text-sm"><b>Ingredients:</b> {{ingredients}}</p>
         <p class="pt-8 text-sm"><b>Instructions:</b> {{instructions}}</p>
-
-      {{#if logged_in}}
+        <br>
+        {{#if logged_in}}
         <p>
-          <button class="btn btn-primary" id="rateRecipeButton">Rate this recipe!</button>
+          <button class="bg-green-700 hover:bg-green-900 text-white font-bold py-2 px-4 rounded-full btn btn-primary"
+            id="rateRecipeButton">Rate this recipe!</button>
         </p>
 
         <!-- Hidden form field initially hidden, make into a script when you can -->
         <p id="ratingForm" style="display: none;">
           <label for="project-rating">Rate this recipe:</label>
           <input type="number" id="rating" name="rating" step="0.1" min="0" max="5" value="0">
-          <button id="submitRating" class="btn btn-primary">Submit</button>
+          <button id="submitRating"
+            class="bg-green-700 hover:bg-green-900 text-white font-bold py-2 px-4 rounded-full btn btn-primary">Submit</button>
         </p>
       </div>
       <script src="/js/rating.js"></script>
       {{else}}
-          <a href="/login">You must login first to rate this recipe!</a>
+      <a href="/login">You must login first to rate this recipe!</a>
       {{/if}}
     </div>
-  </div>
-
     <!--Img Col-->
     <div class="w-full lg:w-2/5">
       <!-- Image on the side (desktop) -->
       <img src="{{picture_link}}" class="rounded-none lg:rounded-lg shadow-2xl hidden lg:block">
     </div>
-
+  </div>
