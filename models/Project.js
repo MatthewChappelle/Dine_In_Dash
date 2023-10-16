@@ -34,6 +34,13 @@ Project.init(
     rating: {
       type: DataTypes.DECIMAL(3, 2),
     },
+    actual_rating: {
+      type: DataTypes.DECIMAL(5, 2),
+    },
+    rating_count: {
+      type: DataTypes.INTEGER,
+      defaultValue: 0,
+    },
     picture_link: {
       type: DataTypes.STRING,
     },
