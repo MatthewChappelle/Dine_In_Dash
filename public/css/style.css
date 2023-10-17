@@ -124,6 +124,7 @@ body .dark-text {
 text-transform: capitalize;
 }
 
+/* added styling to current projects on profile */
 .current-projects {
 border: #196b5f 2px solid;
 display: flex;
@@ -132,6 +133,7 @@ padding: 5px;
 border-radius: 20px;
 }
 
+/* shows underline on hyperlink when hovering */
 .hyperlink:hover {
 text-decoration: underline;
 }
