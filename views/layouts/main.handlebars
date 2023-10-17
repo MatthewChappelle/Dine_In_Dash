@@ -16,7 +16,7 @@
     <header class="flex justify-between items-center p-2">
       <h1>
         <span role="img" aria-label="chef" class="text-3xl font-semibold text-gray-800">👨‍🍳</span>
-        <a href="/" class="text-3xl font-semibold text-green-700">Dine 'n Dash!</a>
+        <a href="/" class="text-3xl font-semibold text-green-700">Dine 'n <i>Dash!</i></a>
       </h1>
       <nav class="flex items-center">
         <!-- Conditionally render login or logout links -->
@@ -43,7 +43,7 @@
 
   <!-- Pin to top right corner -->
   <div class="absolute top-0 right-0 h-12 w-18 p-4">
-    <button class="js-change-theme focus:outline-none">🌙</button>
+    <button class="js-change-theme focus:outline-none"></button>
   </div>
 
   <script src="https://unpkg.com/popper.js@1/dist/umd/popper.min.js"></script>
@@ -54,29 +54,61 @@
       placement: 'bottom'
     })
 
+
+
     //Toggle mode
     const toggle = document.querySelector('.js-change-theme');
     const body = document.querySelector('body');
     const profile = document.getElementById('profile');
+    const logoutBtn = document.getElementById('logout');
+    var darkMode = localStorage.getItem("dark-mode");
 
 
-    toggle.addEventListener('click', () => {
+    if (!darkMode || darkMode === "light") {
+      enableLightMode();
+    } else {
+      enableDarkMode();
+    }
 
-      if (body.classList.contains('text-gray-900')) {
-        toggle.innerHTML = "☀️";
-        body.classList.remove('text-gray-900');
-        body.classList.add('text-gray-100');
-        profile.classList.remove('bg-white');
-        profile.classList.add('bg-gray-900');
-      } else {
-        toggle.innerHTML = "🌙";
-        body.classList.remove('text-gray-100');
-        body.classList.add('text-gray-900');
-        profile.classList.remove('bg-gray-900');
-        profile.classList.add('bg-white');
+    toggle.addEventListener('click', toggleDarkMode);
 
+
+    function toggleDarkMode() {
+      let darkMode = localStorage.getItem("dark-mode");
+      console.log(darkMode)
+      if (darkMode === "dark") {
+        enableLightMode();
+        console.log(enableLightMode)
+      } else if (darkMode === "light") {
+        enableDarkMode();
+        console.log(enableDarkMode)
       }
-    });
+    }
+
+    function enableLightMode() {
+      toggle.classList.remove("display-dark-btn");
+      toggle.classList.add("display-light-btn");
+      logoutBtn.classList.remove("dark-text");
+      body.classList.remove('text-gray-100');
+      body.classList.add('text-gray-900');
+      profile.classList.remove('bg-gray-900');
+      profile.classList.add('bg-white');
+      localStorage.setItem("dark-mode", "light");
+
+    }
+
+    function enableDarkMode() {
+      toggle.classList.remove("display-light-btn");
+      toggle.classList.add("display-dark-btn");
+      logoutBtn.classList.add("dark-text");
+      body.classList.remove('text-gray-900');
+      body.classList.add('text-gray-100');
+      profile.classList.remove('bg-white');
+      profile.classList.add('bg-gray-900');
+      localStorage.setItem("dark-mode", "dark");
+    }
+
+
 
   </script>
   <!-- Render script for logged in users only -->
