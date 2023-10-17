@@ -1,7 +1,7 @@
 # Dine 'n Dash
 To give the everyday people an easy way to save and share their recipes with other people. Dine ’n Dash makes dining in fun, easy and affordable. Here you can find new and innovative recipes to enhance your dish or give it a fresh new twist.
 
-![Dine'n Dash](/Dine_In_Dash/public/images/)<br><br>
+![Dine'n Dash](/Dine_In_Dash/public/images/Dine-n-Dash.png)<br><br>
 
 # Description
 This is a recipe application that can be used for storing everyday recipes and meal instructions. For personal use, and to share!
