@@ -60,6 +60,7 @@ label {
   margin-bottom: 15px;
   border: 1px solid #ccc;
   border-radius: 5px;
+  color: black;
 }
 
 /* Apply styles to form buttons */
@@ -86,4 +87,28 @@ label {
 .dark-mode {
   background-color: #1a202c;
   color: white;
+}
+
+body .dark-text {
+  color:rgb(33, 66, 29);
+}
+
+.display-dark-btn::after {
+  content:"🌙";
+}
+
+.display-dark-btn:hover::after {
+  content:"☀️";
+}
+
+.display-light-btn::after {
+  content:"☀️";
+}
+
+.display-light-btn:hover::after {
+  content:"🌙";
+}
+
+.name-greeting {
+text-transform: capitalize;
 }
