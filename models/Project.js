@@ -33,9 +33,11 @@ Project.init(
     },
     rating: {
       type: DataTypes.DECIMAL(3, 2),
+      defaultValue: 0,
     },
     actual_rating: {
       type: DataTypes.DECIMAL(5, 2),
+      defaultValue: 0,
     },
     rating_count: {
       type: DataTypes.INTEGER,
