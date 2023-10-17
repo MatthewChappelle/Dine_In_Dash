@@ -24,6 +24,7 @@ const newFormHandler = async (event) => {
   }
 };
 
+// reworked entire delete button function. Delete button now deletes parent div based on current id. Only the delete button on the top div project worked beforehand.
 const delButtonHandler = async (id) => {
 
   const response = await fetch(`/api/projects/${id}`, {
