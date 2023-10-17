@@ -1,9 +1,9 @@
 <!-- Loop over each object in the projects array -->
 {{#each projects as |project| }}
-<div id="profile" class="max-w-4xl flex-wrap mx-auto lg:my-0 text-gray-900">
+<div id="profile" class="max-w-4xl flex-wrap mx-auto lg:my-0 text-gray-900 mb-4">
   <div><img src="{{project.picture_link}}" alt="{{project.dish}} Image"
       class="w-full h-64 object-cover object-center rounded-lg shadow-md">
-    <div class="relative px-10 -mt-20 ">
+    <div class="relative -mt-20 mb-8 border border-gray-300 rounded-lg p-2">
       <div class="bg-white opacity-75 p-6 rounded-lg shadow-lg">
         <div class="flex items-baseline">
           <span
@@ -36,7 +36,8 @@
           </p> --}}
         </div>
         <div class="mt-4">
-          <span class="text-teal-600 text-md font-semibold">{{{get_rating_emoji project.actual_rating}}} {{actual_rating}} rating
+          <span class="text-teal-600 text-md font-semibold">{{{get_rating_emoji project.actual_rating}}}
+            {{actual_rating}} rating
           </span>
         </div>
       </div>

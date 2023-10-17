@@ -27,7 +27,7 @@
     "rating": 4.5,
     "actual_rating": 4.5,
     "rating_count": 1,
-    "picture_link": "https://www.willcookforsmiles.com/wp-content/uploads/2016/08/Sriracha-Chicken-Tacos.jpg"
+    "picture_link": "https://www.countrysidecravings.com/wp-content/uploads/2018/04/spicy-tacos.jpg"
   },
   {
     "dish": "Pasta Alfredo",
@@ -36,7 +36,8 @@
     "cooking_time": 20,
     "rating": 4.6,
     "actual_rating": 4.6,
-    "rating_count": 1
+    "rating_count": 1,
+    "picture_link": "https://images.ctfassets.net/3vz37y2qhojh/5VhlROxP8sUuxaoEITTHPl/51be515b0df517fa026fc45520598fb5/Easy-Fettuccine-Alfredo-Hero-Horizontal.jpg"
   },
   {
     "dish": "Homemade Margherita Pizza",
@@ -45,7 +46,8 @@
     "cooking_time": 15,
     "rating": 4.8,
     "actual_rating": 4.8,
-    "rating_count": 1
+    "rating_count": 1,
+    "picture_link": "https://www.easyanddelish.com/wp-content/uploads/2020/05/Best-Homemade-Margherita-pizza-featured-image.jpg"
   },
   {
     "dish": "Chicken Stir-Fry",
@@ -54,7 +56,8 @@
     "cooking_time": 25,
     "rating": 4.4,
     "actual_rating": 4.4,
-    "rating_count": 1
+    "rating_count": 1,
+    "picture_link": "https://natashaskitchen.com/wp-content/uploads/2018/08/Chicken-Stir-Fry-1-1.jpg"
   },
   {
     "dish": "Vegetable Lasagna",
@@ -63,7 +66,8 @@
     "cooking_time": 55,
     "rating": 4.6,
     "actual_rating": 4.6,
-    "rating_count": 1
+    "rating_count": 1,
+    "picture_link": "https://www.smalltownwoman.com/wp-content/uploads/2022/03/Vegetable-Lasagna-Recipe-Card.jpg"
   },
   {
     "dish": "Baked Salmon with Garlic and Dijon",
@@ -72,7 +76,8 @@
     "cooking_time": 25,
     "rating": 4.9,
     "actual_rating": 4.9,
-    "rating_count": 1
+    "rating_count": 1,
+    "picture_link": "https://natashaskitchen.com/wp-content/uploads/2012/06/Baked-Salmon-2.jpg"
   },
   {
     "dish": "Vegetarian Quinoa Salad",
@@ -81,7 +86,8 @@
     "cooking_time": 30,
     "rating": 4.7,
     "actual_rating": 4.7,
-    "rating_count": 1
+    "rating_count": 1,
+    "picture_link": "https://www.cookingclassy.com/wp-content/uploads/2020/01/quinoa-salad-16.jpg"
   },
   {
     "dish": "Homemade Vegetable Soup",
@@ -90,6 +96,7 @@
     "cooking_time": 40,
     "rating": 4.5,
     "actual_rating": 4.5,
-    "rating_count": 1
+    "rating_count": 1,
+    "picture_link": "https://krollskorner.com/wp-content/uploads/2022/10/vegetablesoup_6-0064.jpg"
   }
 ]
