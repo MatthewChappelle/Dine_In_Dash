@@ -52,9 +52,10 @@ Heroku Link: https://dinendash-66e7246af15f.herokuapp.com/
 # Resources 
 * Node.js
 * Express.js
-* MySql
+* MySQL
 * Tailwind CSS
 * Class materials
+* Google
 * GitHub - tailwindtoolbox
 * YouTube tutorials
 * Heroku
