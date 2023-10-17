@@ -7,11 +7,12 @@
         <form class="form login-form">
           <div class="form-group">
             <label for="email-login">Email:</label>
-            <input class="form-input" type="text" id="email-login" />
+            <input class="form-input" type="text" id="email-login" required />
           </div>
           <div class="form-group">
             <label for="password-login">Password:</label>
-            <input class="form-input" type="password" id="password-login" />
+            <input class="form-input" type="password" id="password-login" placeholder="********" required
+              minlength="8" />
           </div>
           <div class="form-group">
             <button class="bg-green-700 hover:bg-green-900 text-white font-bold py-2 px-4 rounded-full btn btn-primary"
@@ -28,15 +29,16 @@
         <form class="form signup-form">
           <div class="form-group">
             <label for="name-signup">Name:</label>
-            <input class="form-input" type="text" id="name-signup" />
+            <input class="form-input" type="text" id="name-signup" required />
           </div>
           <div class="form-group">
             <label for="email-signup">Email:</label>
-            <input class="form-input" type="text" id="email-signup" />
+            <input class="form-input" type="text" id="email-signup" required />
           </div>
           <div class="form-group">
             <label for="password-signup">Password:</label>
-            <input class="form-input" type="password" id="password-signup" />
+            <input class="form-input" type="password" id="password-signup" placeholder="********" required
+              minlength="8" />
           </div>
           <div class="form-group">
             <button class="bg-green-700 hover:bg-green-900 text-white font-bold py-2 px-4 rounded-full btn btn-primary"

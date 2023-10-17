@@ -8,28 +8,29 @@
     </div>
     <div class="row mt-4">
       <div class="col-md-6">
-        <h3 class="text-lg text-green-700"><b>Add a New Recipe</b></h3>
+        <h3 class="text-lg text-green-700"><b>Add a New Recipe Below!</b></h3>
         <br>
         <form class="form new-project-form">
           <div class="form-group">
             <label for="project-name" class="text-zinc-50">Dish Name:</label>
-            <input class="form-input" type="text" id="project-name" name="project-name" />
+            <input class="form-input" type="text" id="project-name" name="project-name" required />
           </div>
           <div class="form-group">
             <label for="project-funding">Cooking Time (minutes):</label>
-            <input class="form-input" type="number" id="project-funding" name="project-funding" />
+            <input class="form-input" type="number" id="project-funding" name="project-funding" placeholder="0" />
           </div>
           <div class="form-group">
             <label for="project-desc">Ingredients:</label>
-            <textarea class="form-input" id="project-desc" name="project-desc"></textarea>
+            <textarea class="form-input" id="project-desc" name="project-desc" required></textarea>
           </div>
           <div class="form-group">
             <label for="project-inst">Instructions:</label>
-            <textarea class="form-input" id="project-inst" name="project-inst"></textarea>
+            <textarea class="form-input" id="project-inst" name="project-inst" required></textarea>
           </div>
           <div class="form-group">
             <label for="project-inst">Picture Link:</label>
-            <textarea class="form-input" id="project-pict" name="project-pict" placeholder="Add a URL!"></textarea>
+            <textarea class="form-input" id="project-pict" name="project-pict" placeholder="Add a URL!"
+              required></textarea>
           </div>
           <div class="form-group">
             <button type="submit"
@@ -42,18 +43,18 @@
       <br>
       {{#if projects.length}}
       <div class="col-md-6 project-list">
-        <h3 class="text-lg text-green-700"><b>Current Recipes</b></h3>
+        <h3 class="text-lg text-green-700" style="margin-bottom: 20px"><b>Current Recipes:</b></h3>
         {{#each projects as |project|}}
-        <div class="row mb-2">
-          <div class="col-md-8 pt-4 text-base font-bold flex items-center justify-center lg:justify-start">
+        <div class="row mb-2 current-projects">
+          <div class="col-md-8 text-base font-bold flex items-center justify-center lg:justify-start"
+            style="margin-left: 5px">
             <h4 class="mt-1 text-l font-semibold uppercase leading-tight truncate text-green-700">
-              {{{get_emoji}}}<a href="/project/{{project.id}}">{{project.dish}}</a>
+              {{{get_emoji}}}<a href="/project/{{project.id}}" class="hyperlink">{{project.dish}}</a>
           </div>
           <div class="col-md-4">
-            <button class="bg-green-700 hover:bg-green-900 text-white font-bold py-2 px-4 rounded-full"
-              data-id="{{project.id}}">Delete</button>
+            <button class="bg-green-700 hover:bg-green-900 text-white font-bold py-2 px-4 rounded-full proj-del-btn"
+              data-id="{{project.id}}" onclick="delButtonHandler({{project.id}})">Delete</button>
           </div>
-          </p>
         </div>
       </div>
       {{/each}}

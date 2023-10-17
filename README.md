@@ -43,8 +43,9 @@ If you want to see this website on your own computer, follow these simple steps:
 6. Seed database
 7. Start the server
 8. Run localhost on the browser  
-  
+
 GitHub Link: https://github.com/MatthewChappelle/Dine_In_Dash/  
+
 Heroku Link: https://dinendash-66e7246af15f.herokuapp.com/
 
 

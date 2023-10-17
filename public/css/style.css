@@ -2,6 +2,13 @@ header,
 .project:not(:last-child) {
   border-bottom: 1px solid #ccc;
 }
+/* keeps header on top of window when scrolling */
+.sticky-header {
+  position: sticky;
+  top: 0;
+  background-color: #1a202cf5;
+  z-index: 1;
+}
 
 .sand-clock {
   color: #056605;
@@ -95,20 +102,38 @@ body .dark-text {
 
 .display-dark-btn::after {
   content:"🌙";
+  font-size: larger;
 }
 
 .display-dark-btn:hover::after {
   content:"☀️";
+  font-size: larger;
 }
 
 .display-light-btn::after {
   content:"☀️";
+  font-size: larger;
 }
 
 .display-light-btn:hover::after {
   content:"🌙";
+  font-size: larger;
 }
 
 .name-greeting {
 text-transform: capitalize;
+}
+
+/* added styling to current projects on profile */
+.current-projects {
+border: #196b5f 2px solid;
+display: flex;
+justify-content: space-between;
+padding: 5px;
+border-radius: 20px;
+}
+
+/* shows underline on hyperlink when hovering */
+.hyperlink:hover {
+text-decoration: underline;
 }

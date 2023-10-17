@@ -24,26 +24,20 @@ const newFormHandler = async (event) => {
   }
 };
 
-const delButtonHandler = async (event) => {
-  if (event.target.hasAttribute('data-id')) {
-    const id = event.target.getAttribute('data-id');
+// reworked entire delete button function. Delete button now deletes parent div based on current id. Only the delete button on the top div project worked beforehand.
+const delButtonHandler = async (id) => {
 
-    const response = await fetch(`/api/projects/${id}`, {
-      method: 'DELETE',
-    });
+  const response = await fetch(`/api/projects/${id}`, {
+    method: 'DELETE',
+  });
 
-    if (response.ok) {
-      document.location.replace('/profile');
-    } else {
-      alert('Failed to delete project');
-    }
+  if (response.ok) {
+    document.location.replace('/profile');
+  } else {
+    alert('Failed to delete project');
   }
 };
 
 document
   .querySelector('.new-project-form')
   .addEventListener('submit', newFormHandler);
-
-document
-  .querySelector('.project-list')
-  .addEventListener('click', delButtonHandler);
