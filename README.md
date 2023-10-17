@@ -1,17 +1,17 @@
 # Dine 'n Dash
 To give the everyday people an easy way to save and share their recipes with other people. Dine ’n Dash makes dining in fun, easy and affordable. Here you can find new and innovative recipes to enhance your dish or give it a fresh new twist.
 
-![Dine'n Dash](/Dine_In_Dash/public/images/)<br><br>
+![Dine'n Dash](./public/images/Dine-n-Dash.png)<br><br>
 
 # Description
 This is a recipe application that can be used for storing everyday recipes and meal instructions. For personal use, and to share!
 
 
 # Features
-* Access top 10 recipes
 * Create a user profile
 * Digital recipe book to save your favorite recipes
-* Cook and review other people's recipes
+* Cook and review other people's recipes  
+* Light/dark mode for account users
 
 
 # User Story
@@ -43,8 +43,9 @@ If you want to see this website on your own computer, follow these simple steps:
 6. Seed database
 7. Start the server
 8. Run localhost on the browser  
-  
-GitHub Link: https://github.com/MatthewChappelle/Dine_In_Dash/\
+
+GitHub Link: https://github.com/MatthewChappelle/Dine_In_Dash/  
+
 Heroku Link: https://dinendash-66e7246af15f.herokuapp.com/
 
 
