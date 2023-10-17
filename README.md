@@ -8,10 +8,10 @@ This is a recipe application that can be used for storing everyday recipes and m
 
 
 # Features
-* Access top 10 recipes
 * Create a user profile
 * Digital recipe book to save your favorite recipes
-* Cook and review other people's recipes
+* Cook and review other people's recipes  
+* Light/dark mode for account users
 
 
 # User Story
@@ -44,7 +44,7 @@ If you want to see this website on your own computer, follow these simple steps:
 7. Start the server
 8. Run localhost on the browser  
   
-GitHub Link: https://github.com/MatthewChappelle/Dine_In_Dash/ 
+GitHub Link: https://github.com/MatthewChappelle/Dine_In_Dash/  
 Heroku Link: https://dinendash-66e7246af15f.herokuapp.com/
 
 
